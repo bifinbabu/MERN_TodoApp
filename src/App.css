@@ -1,38 +1,82 @@
-.App {
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+
+header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 100px;
+  color: blue;
+  font-weight: 200;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-size: 20px;
+  color: blue;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.task {
+  background-color: #687c8f;
+  padding: 15px;
+  margin: 5px;
+  height: 22px;
+  overflow-x: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.task span {
+  color: aliceblue;
+}
+
+.icon {
+  float: right;
+  margin: 20px;
+  margin-top: -1px;
+  
+}
+
+article {
+  display: grid;
+}
+
+.edit-todo {
+  width: 80%;
+  font-size: 16px;
+  color: aliceblue;
+  background-color: transparent;
+  height: 5px;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: aliceblue;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.button.selected {
   color: white;
+  background-color: #6c6777;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clear {
+  float: right;
+  color: aliceblue;
+  background-color: red;
+  width: 170px;
 }
